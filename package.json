@@ -1,0 +1,25 @@
+{
+  "name": "gelbooru",
+  "version": "0.0.1",
+  "description": "A module to fetch images from Gelbooru.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sadir0603/node-gelbooru.git"
+  },
+  "keywords": [
+    "gelbooru",
+    "node",
+    "nodeJS",
+    "imageboard"
+  ],
+  "author": "Sadir Menetal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sadir0603/node-gelbooru/issues"
+  },
+  "homepage": "https://github.com/Sadir0603/node-gelbooru#readme"
+}
