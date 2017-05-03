@@ -4,10 +4,9 @@ const parseString = require('xml2js').parseString;
 
 exports.getImage = function(limit, tags, callback){
 
-    var results;
-
     var address = `http://gelbooru.com/index.php?page=dapi&s=post&q=index&limit=${limit}&tags=${tags}`;
     agent.post(address).end(function (err, res) {
+
         callback(res);
 
         if (err) {

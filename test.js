@@ -1,7 +1,7 @@
 const gelbooru = require('./index');
 const parseString = require('xml2js').parseString;
 
-gelbooru.getImage(1, "forced_orgasm", function (data) {
+gelbooru.getImage(1, "blond_hair", function (data) {
     let cleanedString = data.text.replace("\ufeff", "");
     parseString(cleanedString, function (error, result) {
         if (error)
