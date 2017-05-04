@@ -20,3 +20,12 @@ getImage(1, "blond_hair", function (data) {
 });
 ```
 The above example would obtain the data on one image with the tag 'blond hair', and then using the callback function with the variable 'data', the resultant XML from Gelbooru is parsed, making it possible to access the URL of the image (stored in the variable imageURL).
+
+### getRandomImage
+This function searches a user-defined number of images with the given tags on gelbooru, and then randomly returns the URL of one of the images.
+```
+gelbooru.getRandomImage(500, "blond_hair", function (data) {    
+console.log(data);
+});
+```
+The above example calls this function to search 500 images with the tag 'blond hair', and then prints the resulting URL to the console.
