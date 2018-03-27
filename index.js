@@ -41,6 +41,8 @@ exports.getRandomImage = function (limit, tags, callback) {
                     callback(imageURL);
                 } else {
                     console.log("Error: Number of images is undefined!");
+
+                    callback("Error: Could not find any images!");
                 }
             }
         });
