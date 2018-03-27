@@ -32,11 +32,16 @@ exports.getRandomImage = function (limit, tags, callback) {
             if (error)
                 console.log("Error", error);
             else {
-                let randomImagePicker = Math.floor(Math.random() * (limit - 1)) + 1;
-                
-                var imageURL = result.posts.post[randomImagePicker].$.file_url;
 
-                callback(imageURL);
+                if (typeof(result.posts.post) != "undefined") {
+                    let randomImagePicker = Math.floor(Math.random() * (result.posts.post.length - 1)) + 1;
+
+                    var imageURL = result.posts.post[randomImagePicker].$.file_url;
+
+                    callback(imageURL);
+                } else {
+                    console.log("Error: Number of images is undefined!");
+                }
             }
         });
 
